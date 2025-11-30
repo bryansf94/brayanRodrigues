@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfólio - Seu Brayan Rodrigues</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css\styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="portfolio-nav">
+        <a href="#sobre" class="nav-logo">Brayan Rodrigues</a>
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="section">
+      <div class="container about-wrapper">
+        <div class="about-image">
+          <!-- Placeholder – depois você troca pelo seu src -->
+          <img class="about-image-placeholder" 
+          src="imagens/minha_foto.jfif" 
+          alt="Minha foto profissional">
+        </div>
+
+        <div class="about-content">
+          <h1>Olá, eu sou <span>Brayan Rodrigues</span></h1>
+          <p>
+            Sou fundador da startup digital Beyond Bits, onde desenvolvo e entrego projetos de forma independente, desde a concepção da solução até a documentação final. Trabalho há mais de 3 anos na área de desenho de sistemas e soluções digitais, atuando com levantamento e análise de requisitos, modelagem, desenvolvimento e testes de software. Ao longo desse período, construí produtos e identidades visuais, sistemas web, landing pages e materiais profissionais para clientes reais, sempre com foco em performance, clareza e experiência de usuário.
+          </p>
+          <p>
+              Minha vivência na Beyond Bits também me permitiu evoluir no relacionamento com clientes, gestão de demandas e entrega de soluções completas — do planejamento técnico ao teste final — mantendo organização, comunicação e documentação estruturada em cada projeto.
+          </p>
+          <div class="about-tags">
+            <span>Designer</span>
+            <span>Desenvolvedor</span>
+            <span>Freelancer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Formação</h2>
+        <p class="section-subtitle">
+          Cursos, graduações e formações que me ajudaram a chegar até aqui.
+        </p>
+
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+            <span class="education-institution">Uninter • 2022 - 2025 • Em andamento</span>
+            <p>
+              Durante o curso, estudo fundamentos de programação, estrutura de dados, lógica computacional, desenvolvimento web, modelagem de banco de dados e engenharia de software.
+            </p>
+          </article>
+
+          <article class="education-card">
+            <h3>Curso de Design Gráfico e UX Designer</h3>
+            <span class="education-institution">Alura • 2023</span>
+            <p>
+              Foco em identidade visual, tipografia, teoria das cores e criação de peças
+              para redes sociais e marcas. Melhores práticas de UX para web e mobile.
+            </p>
+          </article>
+
+          <article class="education-card">
+            <h3>Outras formações e certificações</h3>
+            <span class="education-institution">Workshops, bootcamps e outros cursos.</span>
+            <p>
+              Já concluí diversos cursos focados em linguagens e tecnologias pela Alura, Dio.me e Udemy, incluindo práticas voltadas ao desenvolvimento web, programação e ferramentas de suporte ao ciclo de software.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO -->
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2 class="section-title">Portfólio</h2>
+        <p class="section-subtitle">
+          Alguns dos trabalhos que representam melhor meu estilo em design e programação.
+        </p>
+
+        <!-- TRABALHOS GRÁFICOS -->
+        <div class="portfolio-group">
+          <h3 class="portfolio-group-title">Trabalhos gráficos</h3>
+
+          <div class="portfolio-slider" data-slider="design">
+            <div class="portfolio-media">
+              <img
+                id="design-image"
+                src="https://via.placeholder.com/800x450.png?text=Design+1"
+                alt="Projeto de design"
+              />
+            </div>
+
+            <div class="portfolio-info">
+              <h4 id="design-title">Nome do Projeto de Design</h4>
+              <p id="design-description">
+                Descrição do projeto, objetivo, estilo visual e resultados alcançados.
+              </p>
+              <a id="design-link" href="#" target="_blank" class="btn-link">
+                Ver projeto completo
+              </a>
+
+              <div class="slider-controls">
+                <button class="slider-btn" data-slider="design" data-direction="prev">
+                  ◀ Anterior
+                </button>
+                <span id="design-indicator" class="slider-indicator">1 / 3</span>
+                <button class="slider-btn" data-slider="design" data-direction="next">
+                  Próximo ▶
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TRABALHOS DE PROGRAMAÇÃO -->
+        <div class="portfolio-group">
+          <h3 class="portfolio-group-title">Trabalhos de programação</h3>
+
+          <div class="portfolio-slider" data-slider="dev">
+            <div class="portfolio-media">
+              <img
+                id="dev-image"
+                src="https://via.placeholder.com/800x450.png?text=Projeto+Dev+1"
+                alt="Projeto de programação"
+              />
+            </div>
+
+            <div class="portfolio-info">
+              <h4 id="dev-title">Projeto de Programação</h4>
+              <p id="dev-description">
+                Descrição do projeto: stack utilizada, objetivo e funcionalidades principais.
+              </p>
+              <a id="dev-link" href="#" target="_blank" class="btn-link">
+                Ver deploy
+              </a>
+
+              <div class="slider-controls">
+                <button class="slider-btn" data-slider="dev" data-direction="prev">
+                  ◀ Anterior
+                </button>
+                <span id="dev-indicator" class="slider-indicator">1 / 2</span>
+                <button class="slider-btn" data-slider="dev" data-direction="next">
+                  Próximo ▶
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section-alt">
+      <div class="container contact-wrapper">
+        <div class="contact-text">
+          <h2 class="section-title">Contato</h2>
+          <p class="section-subtitle align-left">
+            Tem um projeto em mente ou quer trocar uma ideia? Me chama que eu respondo o mais rápido possível.
+          </p>
+
+          <ul class="contact-list">
+            <li><strong>E-mail:</strong> bryansf94@gmail.com</li>
+            <li><strong>WhatsApp:</strong> (31) 99082-2734</li>
+            <li><strong>Cidade:</strong> Vespasiano / Minas Gerais</li>
+          </ul>
+        </div>
+
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input id="nome" type="text" placeholder="Seu Nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="seuemail@exemplo.com" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="assunto">Assunto</label>
+            <input id="assunto" type="text" placeholder="Sobre o que é o contato?" />
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" rows="4" placeholder="Conte um pouco sobre o projeto..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">
+            Enviar mensagem
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Brayan Rodrigues — Portfólio.</p>
+    </div>
+   <!-- VISUALIZAÇÃO DOS PROJETOS EM PDF -->
+<section id="pdf-section" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Visualização dos projetos em PDF</h2>
+    <p class="section-subtitle">
+      Aqui você pode visualizar os arquivos em PDF de cada projeto de identidade visual e materiais de design.
+    </p>
+
+    <!-- Projeto 1 -->
+    <h3 class="portfolio-group-title">Projeto 1 – Identidade Visual Portal dos Cristais</h3>
+    <iframe
+      id="pdf-frame-1"
+      src=""
+      width="100%"
+      height="500"
+      style="border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background:#0f172a;"
+    ></iframe>
+
+    <!-- Projeto 2 -->
+    <h3 class="portfolio-group-title">Projeto 2 – Social Media</h3>
+    <iframe
+      id="pdf-frame-2"
+      src=""
+      width="100%"
+      height="500"
+      style="border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background:#0f172a; margin-top:2rem;"
+    ></iframe>
+
+    <!-- Projeto 3 -->
+    <h3 class="portfolio-group-title">Projeto 3 – Landing Page</h3>
+    <iframe
+      id="pdf-frame-3"
+      src=""
+      width="100%"
+      height="500"
+      style="border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; background:#0f172a; margin-top:2rem;"
+    ></iframe>
+  </div>
+</section>
+
+  </div>
+</section>
+  </footer>
+
+  <!-- JS -->
+  <script src="js\script.js"></script>
+</body>
+</html>
